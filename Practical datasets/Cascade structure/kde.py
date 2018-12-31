@@ -4,7 +4,6 @@ import tensorflow as tf
 import numpy as np
 import scipy
 def Kget_dists(X):
-    # X=tf.convert_to_tensor(X)
     x2 = np.expand_dims(np.sum(np.square(X), axis=1), 1)
     dists = x2 + np.transpose(x2) - 2*np.dot(X, np.transpose(X))
     return dists#K.eval()
