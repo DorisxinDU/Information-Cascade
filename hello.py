@@ -1,2 +1,2 @@
-hello world
-version1
+print('hello world')
+version2
